@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <!-- Google Font -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div id="main">
+        <!-- TopBar Part Start -->
+        <section class="topBar">
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <div class="container-fluid">
+                    <a id="logo" onmouseover="mouseOver()" onmouseout="mouseOut()"
+                        class="navbar-brand text-light">DELS</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a onclick="showContent('watchBox')" class="nav-link active">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Explore</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a onclick="showContent('loginBox')" class="nav-link">Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- //TopBar Part End -->
+
+        <!-- dashBoard Video Part Start -->
+        <section id="frontBox" class="d-none">
+            <div class="allbox">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="upload">
+                            <div class="card" style="width: 18rem;">
+                                <img src="assets/images/gif/uploadFile3.gif" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h4 class="text-start">Upload your video and Show your skills</h4>
+                                    <p class="card-text text-start">You can upload your content from here</p>
+                                    <input type="file" id="uploadfile" accept="assets/videos/*">
+                                    <label for="uploadfile" class="uploadBtn mt-3">Upload</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="dashboardUtilities">
+                            <div class="card">
+                                <div class="card-header">
+                                    DashBoard
+                                </div>
+                                <div class="card-body">
+                                    <div class="dashboard_item">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="subscribers item">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">Current subscribers</h5>
+                                                          <h6 class="d-block">500</h6>
+                                                          <p class="d-block">Daily</p>
+                                                          <span id="itemBtn" class="ms-auto">analytics</span>
+                                                        </div>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="subscribers item">
+                                                    <div class="card"">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">Views</h5>
+                                                          <h6 class="d-block">1300</h6>
+                                                          <p class="d-block">Daily</p>
+                                                          <span id="itemBtn" class="ms-auto">analytics</span>
+                                                        </div>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="subscribers item">
+                                                    <div class="card"">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">Earnings</h5>
+                                                          <h6 class="d-block">$<span>420</span></h6>
+                                                          <p class="d-block">Total Earnings</p>
+                                                          <span id="itemBtn" class="ms-auto">analytics</span>
+                                                        </div>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="frontBox" class="">
+            <div id="dashBoard" class="allbox">
+                <div class="db-sidebar">
+                    <div class="sidebarBtn">
+                        <i id="open" class="fas fa-bars iconBtn"></i>
+                        <i id="cancel" class="fas fa-times iconBtn"></i>
+                    </div>
+                    <ul>
+                        <li><a><img src="assets/images/icons/dashboard.png">Dashboard</a></li>
+                        <li><a><img src="assets/images/icons/db-channel.png">Channel</a></li>
+                        <li><a><img src="assets/images/icons/db-profile.png">Profile</a></li>
+                        <li><a><img src="assets/images/icons/db-settings.png">Settings</a></li>
+                        <li><a><img src="assets/images/icons/db-help.png">Help</a></li>
+                        <li><a><img src="assets/images/icons/db-signout.png">SignOut</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- /dashBoard Video Part End -->
+    </div>
+
+
+    <!-- if javascript doesn't work -->
+    <noscript>You have to enable javascript to view this site</noscript>
+    <!-- Jquery Js -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- FontAwesome Js -->
+    <script src="assets/js/fontawesome.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Main Js -->
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

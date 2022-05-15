@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images" />
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+
+    <!-- Google Font -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <div id="main">
+      <!-- TopBar Part Start -->
+      <section class="topBar">
+        <nav
+          id="navbar"
+          class="navbar navbar-expand-lg navbar-light bg-transparent"
+        >
+          <div class="container-fluid">
+            <a
+              id="logo"
+              onmouseover="mouseOver()"
+              onmouseout="mouseOut()"
+              class="navbar-brand text-light"
+              >DELS</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a onclick="showContent('watchBox')" class="nav-link active"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Explore</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a onclick="showContent('loginBox')" class="nav-link"
+                    >Account</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- //TopBar Part End -->
+
+      <!-- Watch Video Part Start -->
+      <section id="frontBox">
+        <div class="homebox allbox">
+          <div id="menuBar">
+            <nav id="videoMenu" class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                      <a class="nav-link">Basic Knowledge</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Sex Education</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Herbal Medico</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="allVideosContainer">
+            <div class="allVideoItems">
+              <div class="row mx-auto">
+                <div class="col-3 mb-4">
+                  <div class="videoItem">
+                    <span id="v_Duration">5:30</span>
+                    <img src="assets/images/1.jpg" alt="" />
+                    <div class="videoItemText">
+                      <h5>How to do gardening?</h5>
+                      <h6>
+                        <span>Noortaz Razoana</span>
+                        <i class="vItemIcon fa-solid fa-heart"></i>
+                        <i class="vItemIcon fa-regular fa-clock"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 mb-4">
+                  <div class="videoItem">
+                    <span id="v_Duration">5:30</span>
+                    <img src="assets/images/2.jpg" alt="" />
+                    <div class="videoItemText">
+                      <h5>How to do gardening?</h5>
+                      <h6>
+                        <span>Noortaz Razoana</span>
+                        <i class="vItemIcon fa-solid fa-heart"></i>
+                        <i class="vItemIcon fa-regular fa-clock"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 mb-4">
+                  <div class="videoItem">
+                    <span id="v_Duration">5:30</span>
+                    <img src="assets/images/3.jpg" alt="" />
+                    <div class="videoItemText">
+                      <h5>How to do gardening?</h5>
+                      <h6>
+                        <span>Noortaz Razoana</span>
+                        <i class="vItemIcon fa-solid fa-heart"></i>
+                        <i class="vItemIcon fa-regular fa-clock"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 mb-4">
+                  <div class="videoItem">
+                    <span id="v_Duration">5:30</span>
+                    <img src="assets/images/4.jpg" alt="" />
+                    <div class="videoItemText">
+                      <h5>How to do gardening?</h5>
+                      <h6>
+                        <span>Noortaz Razoana</span>
+                        <i class="vItemIcon fa-solid fa-heart"></i>
+                        <i class="vItemIcon fa-regular fa-clock"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 mb-4">
+                  <div class="videoItem">
+                    <span id="v_Duration">5:30</span>
+                    <img src="assets/images/5.jpg" alt="" />
+                    <div class="videoItemText">
+                      <h5>How to do gardening?</h5>
+                      <h6>
+                        <span>Noortaz Razoana</span>
+                        <i class="vItemIcon fa-solid fa-heart"></i>
+                        <i class="vItemIcon fa-regular fa-clock"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 mb-4">
+                  <div class="videoItem">
+                    <span id="v_Duration">5:30</span>
+                    <img src="assets/images/6.jpg" alt="" />
+                    <div class="videoItemText">
+                      <h5>How to do gardening?</h5>
+                      <h6>
+                        <span>Noortaz Razoana</span>
+                        <i class="vItemIcon fa-solid fa-heart"></i>
+                        <i class="vItemIcon fa-regular fa-clock"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 mb-4">
+                  <div class="videoItem">
+                    <span id="v_Duration">5:30</span>
+                    <img src="assets/images/7.jpg" alt="" />
+                    <div class="videoItemText">
+                      <h5>How to do gardening?</h5>
+                      <h6>
+                        <span>Noortaz Razoana</span>
+                        <i class="vItemIcon fa-solid fa-heart"></i>
+                        <i class="vItemIcon fa-regular fa-clock"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 mb-4">
+                  <div class="videoItem">
+                    <span id="v_Duration">5:30</span>
+                    <img src="assets/images/8.jpg" alt="" />
+                    <div class="videoItemText">
+                      <h5>How to do gardening?</h5>
+                      <h6>
+                        <span>Noortaz Razoana</span>
+                        <i class="vItemIcon fa-solid fa-heart"></i>
+                        <i class="vItemIcon fa-regular fa-clock"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 mb-4">
+                  <div class="videoItem">
+                    <span id="v_Duration">5:30</span>
+                    <img src="assets/images/9.jpg" alt="" />
+                    <div class="videoItemText">
+                      <h5>How to do gardening?</h5>
+                      <h6>
+                        <span>Noortaz Razoana</span>
+                        <i class="vItemIcon fa-solid fa-heart"></i>
+                        <i class="vItemIcon fa-regular fa-clock"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 mb-4">
+                  <div class="videoItem">
+                    <span id="v_Duration">5:30</span>
+                    <img src="assets/images/10.jpg" alt="" />
+                    <div class="videoItemText">
+                      <h5>How to do gardening?</h5>
+                      <h6>
+                        <span>Noortaz Razoana</span>
+                        <i class="vItemIcon fa-solid fa-heart"></i>
+                        <i class="vItemIcon fa-regular fa-clock"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 mb-4">
+                  <div class="videoItem">
+                    <span id="v_Duration">5:30</span>
+                    <img src="assets/images/11.jpg" alt="" />
+                    <div class="videoItemText">
+                      <h5>How to do gardening?</h5>
+                      <h6>
+                        <span>Noortaz Razoana</span>
+                        <i class="vItemIcon fa-solid fa-heart"></i>
+                        <i class="vItemIcon fa-regular fa-clock"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 mb-4">
+                  <div class="videoItem">
+                    <span id="v_Duration">5:30</span>
+                    <img src="assets/images/12.jpg" alt="" />
+                    <div class="videoItemText">
+                      <h5>How to do gardening?</h5>
+                      <h6>
+                        <span>Noortaz Razoana</span>
+                        <i class="vItemIcon fa-solid fa-heart"></i>
+                        <i class="vItemIcon fa-regular fa-clock"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 mb-4">
+                  <div class="videoItem">
+                    <span id="v_Duration">5:30</span>
+                    <img src="assets/images/13.jpg" alt="" />
+                    <div class="videoItemText">
+                      <h5>How to do gardening?</h5>
+                      <h6>
+                        <span>Noortaz Razoana</span>
+                        <i class="vItemIcon fa-solid fa-heart"></i>
+                        <i class="vItemIcon fa-regular fa-clock"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 mb-4">
+                  <div class="videoItem">
+                    <span id="v_Duration">5:30</span>
+                    <img src="assets/images/14.jpg" alt="" />
+                    <div class="videoItemText">
+                      <h5>How to do gardening?</h5>
+                      <h6>
+                        <span>Noortaz Razoana</span>
+                        <i class="vItemIcon fa-solid fa-heart"></i>
+                        <i class="vItemIcon fa-regular fa-clock"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 mb-4">
+                  <div class="videoItem">
+                    <span id="v_Duration">5:30</span>
+                    <img src="assets/images/15.jpg" alt="" />
+                    <div class="videoItemText">
+                      <h5>How to do gardening?</h5>
+                      <h6>
+                        <span>Noortaz Razoana</span>
+                        <i class="vItemIcon fa-solid fa-heart"></i>
+                        <i class="vItemIcon fa-regular fa-clock"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //Watch Video Part End -->
+    </div>
+
+    <!-- if javascript doesn't work -->
+    <noscript>You have to enable javascript to view this site</noscript>
+    <!-- Jquery Js -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- FontAwesome Js -->
+    <script src="assets/js/fontawesome.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Main Js -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

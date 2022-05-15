@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELS</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <!-- Google Font -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div id="main">
+        <!-- TopBar Part Start -->
+        <section class="topBar">
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <div class="container-fluid">
+                    <a id="logo" onmouseover="mouseOver()" onmouseout="mouseOut()" class="navbar-brand text-light"
+                        href="#">DELS</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a onclick="showContent('watchBox')" class="nav-link active">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Explore</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a onclick="showContent('loginBox')" class="nav-link">Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- //TopBar Part End -->
+
+        <!-- Watch Video Part Start -->
+        <section id="frontBox">
+            <div id="watchBox" class="watchBox">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="video-container">
+                            <video class="videoStream" controls="play">
+                                <source src="assets/videos/v.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="otherUtilities">
+                            <div class="utilitiesMenu">
+                                <ul class="nav justify-content-center">
+                                    <li class="nav-item">
+                                        <a id="d_c_Btn" onclick="displayBlock('d_c')" class="nav-link active"
+                                            aria-current="page" href="#">D/C</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="playlistBtn" onclick="displayBlock('playlist')"
+                                            class="nav-link">Playlist</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="quizBtn" onclick="displayBlock('quizBox')" class="nav-link">Quiz</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="utilitiesList">
+                                <div class="allUtilities bg-transparent">
+                                    <div id="d_c" class="description_comment">
+                                        <div class="descriptionBox text-light">
+                                            <span class="badge subscribe">Subscribe</span>
+                                            <span class="badge bg-ldl">like <span
+                                                    class="ldlicon fa-solid fa-thumbs-up"></span></span>
+                                            <span class="badge bg-ldl">Dislike <span
+                                                    class="ldlicon fa-solid fa-thumbs-down"></span></span>
+                                            <h3>How to do gardening?</h3>
+                                            <h6>This video is made by <span>Noortaz Razoana</span> </h6>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quia
+                                                earum
+                                                iste beatae a numquam excepturi, eos quis enim quibusdam, mollitia
+                                                commodi
+                                                est ad aperiam eaque nulla sint itaque alias? Ipsam magni commodi
+                                                officia.
+                                            </p>
+                                        </div>
+                                        <div class="commentBox">
+                                            <div class="card">
+                                                <h5 class="card-header">
+                                                    <img src="assets/images/g.jpg" alt="">
+                                                    <span>Noortaz Razoana</span>
+                                                </h5>
+                                                <div class="card-body">
+                                                    <p class="card-text">Your contents are very informative. I learned a
+                                                        lot from your content.</p>
+                                                    <span class="badge bgBadge">View <span>9</span> Replies</span>
+                                                    <span class="badge bgBadge">Reply</span>
+                                                    <span class="ldlicon fa-solid fa-thumbs-down"></span>
+                                                    <span class="ldlicon fa-solid fa-thumbs-up"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="commentBox">
+                                            <div class="card">
+                                                <h5 class="card-header">
+                                                    <img src="assets/images/g.jpg" alt="">
+                                                    <span>Noortaz Razoana</span>
+                                                </h5>
+                                                <div class="card-body">
+                                                    <p class="card-text">Your contents are very informative. I learned a
+                                                        lot from your content.</p>
+                                                    <span class="badge bgBadge">View <span>9</span> Replies</span>
+                                                    <span class="badge bgBadge">Reply</span>
+                                                    <span class="ldlicon fa-solid fa-thumbs-down"></span>
+                                                    <span class="ldlicon fa-solid fa-thumbs-up"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="playlist" class="playlist d-none">
+                                        <div class="card">
+                                            <h5 class="card-header">Computer Modeling & Simulation</h5>
+                                            <div class="card-body">
+                                                <div class="playlistVideoBox">
+                                                    <div class="v_item">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/images/15.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="v_item_text">
+                                                                    <h5>Lorem ipsum dolor sit amet ...</h5>
+                                                                    <p>
+                                                                        <span>L: 5:20</span>
+                                                                        <a href="">Noortaz Razoana</a>
+                                                                    </p>
+                                                                    <i id="pv-Satting"
+                                                                        class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    <span id="pv-Serial">1</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="playlistVideoBox">
+                                                    <div class="v_item">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/images/14.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="v_item_text">
+                                                                    <h5>Lorem ipsum dolor sit amet ...</h5>
+                                                                    <p>
+                                                                        <span>L: 5:20</span>
+                                                                        <a href="">Noortaz Razoana</a>
+                                                                    </p>
+                                                                    <i id="pv-Satting"
+                                                                        class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    <span id="pv-Serial">2</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="playlistVideoBox">
+                                                    <div class="v_item">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/images/13.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="v_item_text">
+                                                                    <h5>Lorem ipsum dolor sit amet ...</h5>
+                                                                    <p>
+                                                                        <span>L: 5:20</span>
+                                                                        <a href="">Noortaz Razoana</a>
+                                                                    </p>
+                                                                    <i id="pv-Satting"
+                                                                        class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    <span id="pv-Serial">3</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="playlistVideoBox">
+                                                    <div class="v_item">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/images/12.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="v_item_text">
+                                                                    <h5>Lorem ipsum dolor sit amet ...</h5>
+                                                                    <p>
+                                                                        <span>L: 5:20</span>
+                                                                        <a href="">Noortaz Razoana</a>
+                                                                    </p>
+                                                                    <i id="pv-Satting"
+                                                                        class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    <span id="pv-Serial">4</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="playlistVideoBox">
+                                                    <div class="v_item">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/images/11.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="v_item_text">
+                                                                    <h5>Lorem ipsum dolor sit amet ...</h5>
+                                                                    <p>
+                                                                        <span>L: 5:20</span>
+                                                                        <a href="">Noortaz Razoana</a>
+                                                                    </p>
+                                                                    <i id="pv-Satting"
+                                                                        class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    <span id="pv-Serial">5</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="playlistVideoBox">
+                                                    <div class="v_item">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/images/10.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="v_item_text">
+                                                                    <h5>Lorem ipsum dolor sit amet ...</h5>
+                                                                    <p>
+                                                                        <span>L: 5:20</span>
+                                                                        <a href="">Noortaz Razoana</a>
+                                                                    </p>
+                                                                    <i id="pv-Satting"
+                                                                        class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    <span id="pv-Serial">6</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="playlistVideoBox">
+                                                    <div class="v_item">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/images/9.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="v_item_text">
+                                                                    <h5>Lorem ipsum dolor sit amet ...</h5>
+                                                                    <p>
+                                                                        <span>L: 5:20</span>
+                                                                        <a href="">Noortaz Razoana</a>
+                                                                    </p>
+                                                                    <i id="pv-Satting"
+                                                                        class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    <span id="pv-Serial">7</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="playlistVideoBox">
+                                                    <div class="v_item">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/images/8.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="v_item_text">
+                                                                    <h5>Lorem ipsum dolor sit amet ...</h5>
+                                                                    <p>
+                                                                        <span>L: 5:20</span>
+                                                                        <a href="">Noortaz Razoana</a>
+                                                                    </p>
+                                                                    <i id="pv-Satting"
+                                                                        class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    <span id="pv-Serial">8</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="playlistVideoBox">
+                                                    <div class="v_item">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/images/7.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="v_item_text">
+                                                                    <h5>Lorem ipsum dolor sit amet ...</h5>
+                                                                    <p>
+                                                                        <span>L: 5:20</span>
+                                                                        <a href="">Noortaz Razoana</a>
+                                                                    </p>
+                                                                    <i id="pv-Satting"
+                                                                        class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    <span id="pv-Serial">9</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="playlistVideoBox">
+                                                    <div class="v_item">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/images/6.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="v_item_text">
+                                                                    <h5>Lorem ipsum dolor sit amet ...</h5>
+                                                                    <p>
+                                                                        <span>L: 5:20</span>
+                                                                        <a href="">Noortaz Razoana</a>
+                                                                    </p>
+                                                                    <i id="pv-Satting"
+                                                                        class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    <span id="pv-Serial">10</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="playlistVideoBox">
+                                                    <div class="v_item">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/images/5.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="v_item_text">
+                                                                    <h5>Lorem ipsum dolor sit amet ...</h5>
+                                                                    <p>
+                                                                        <span>L: 5:20</span>
+                                                                        <a href="">Noortaz Razoana</a>
+                                                                    </p>
+                                                                    <i id="pv-Satting"
+                                                                        class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    <span id="pv-Serial">11</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="playlistVideoBox">
+                                                    <div class="v_item">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/images/4.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="v_item_text">
+                                                                    <h5>Lorem ipsum dolor sit amet ...</h5>
+                                                                    <p>
+                                                                        <span>L: 5:20</span>
+                                                                        <a href="">Noortaz Razoana</a>
+                                                                    </p>
+                                                                    <i id="pv-Satting"
+                                                                        class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    <span id="pv-Serial">12</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="playlistVideoBox">
+                                                    <div class="v_item">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/images/3.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="v_item_text">
+                                                                    <h5>Lorem ipsum dolor sit amet ...</h5>
+                                                                    <p>
+                                                                        <span>L: 5:20</span>
+                                                                        <a href="">Noortaz Razoana</a>
+                                                                    </p>
+                                                                    <i id="pv-Satting"
+                                                                        class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    <span id="pv-Serial">13</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="playlistVideoBox">
+                                                    <div class="v_item">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/images/2.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="v_item_text">
+                                                                    <h5>Lorem ipsum dolor sit amet ...</h5>
+                                                                    <p>
+                                                                        <span>L: 5:20</span>
+                                                                        <a href="">Noortaz Razoana</a>
+                                                                    </p>
+                                                                    <i id="pv-Satting"
+                                                                        class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    <span id="pv-Serial">14</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="playlistVideoBox">
+                                                    <div class="v_item">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <img src="assets/images/1.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <div class="v_item_text">
+                                                                    <h5>Lorem ipsum dolor sit amet ...</h5>
+                                                                    <p>
+                                                                        <span>L: 5:20</span>
+                                                                        <a href="">Noortaz Razoana</a>
+                                                                    </p>
+                                                                    <i id="pv-Satting"
+                                                                        class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    <span id="pv-Serial">15</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div id="quizBox" class="quizBox d-none">
+                                        <div class="question">
+                                            <div class="card">
+                                                <h5 class="card-header">What is her full name? <span id="quizSubmit"
+                                                        class="badge" type="submit">Submit</span></h5>
+
+                                                <div class="card-body">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label text-light"
+                                                            for="flexCheckDefault">
+                                                            Noor
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label text-light"
+                                                            for="flexCheckDefault">
+                                                            Razoana
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label text-light"
+                                                            for="flexCheckDefault">
+                                                            Taz
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label text-light"
+                                                            for="flexCheckDefault">
+                                                            Noortaz Razoana
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question">
+                                            <div class="card">
+                                                <h5 class="card-header">What is her full name? <span id="quizSubmit"
+                                                        class="badge" type="submit">Submit</span></h5>
+
+                                                <div class="card-body">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label text-light"
+                                                            for="flexCheckDefault">
+                                                            Noor
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label text-light"
+                                                            for="flexCheckDefault">
+                                                            Razoana
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label text-light"
+                                                            for="flexCheckDefault">
+                                                            Taz
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label text-light"
+                                                            for="flexCheckDefault">
+                                                            Noortaz Razoana
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question">
+                                            <div class="card">
+                                                <h5 class="card-header">What is her full name? <span id="quizSubmit"
+                                                        class="badge" type="submit">Submit</span></h5>
+
+                                                <div class="card-body">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label text-light"
+                                                            for="flexCheckDefault">
+                                                            Noor
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label text-light"
+                                                            for="flexCheckDefault">
+                                                            Razoana
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label text-light"
+                                                            for="flexCheckDefault">
+                                                            Taz
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label text-light"
+                                                            for="flexCheckDefault">
+                                                            Noortaz Razoana
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="loginBox" class="loginBox ls_Box allbox d-none">
+                <div class="loginGif">
+                    <img src="assets/images/gif/working.gif" alt="">
+                </div>
+                <div class="input-group flex-nowrap my-3 px-3">
+                    <span class="input-group-text" id="addon-wrapping">
+                        <i class="fa-solid fa-at inputIcon"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Email / Username">
+                </div>
+                <div class="input-group flex-nowrap my-3 px-3">
+                    <span class="input-group-text" id="addon-wrapping">
+                        <i class="fa-solid fa-key inputIcon"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Password">
+                </div>
+                <button type="button" class="btn btnDesign mx-auto d-block">Login</button>
+                <p>If you haven't account <span onclick="signUpLogin('signUpBox')">SignUp</span> here!</p>
+            </div>
+            <div id="signUpBox" class="signUpBox ls_Box allbox d-none">
+                <div class="signUpIconDiv">
+                    <i class="fa-solid fa-address-card signUpIcon"></i>
+                </div>
+                <div class="row mt-3 px-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
+                </div>
+                <div class="input-group flex-nowrap my-3 px-3">
+                    <span class="input-group-text" id="addon-wrapping">
+                        <i class="fa-solid fa-file-signature inputIcon"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Username">
+                </div>
+                <div class="input-group flex-nowrap my-3 px-3">
+                    <span class="input-group-text" id="addon-wrapping">
+                        <i class="fa-solid fa-at inputIcon"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <div class="input-group flex-nowrap my-3 px-3">
+                    <span class="input-group-text" id="addon-wrapping">
+                        <i class="fa-solid fa-lock inputIcon"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Password">
+                </div>
+                <div class="input-group flex-nowrap my-3 px-3">
+                    <span class="input-group-text" id="addon-wrapping">
+                        <i class="fa-solid fa-lock inputIcon"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Confirm Password">
+                </div>
+                <button type="button" class="btn btnDesign mx-auto d-block">SignUp</button>
+                <p>If you have an account <span onclick="signUpLogin('loginBox')">Login</span> here!</p>
+            </div>
+        </section>
+        <!-- //Watch Video Part End -->
+
+        <!-- All Videos Part Start -->
+        <section id="allVideos">
+            <div id="show" onclick="showVideoList()" class="icon text-center">
+                <img src="assets/images/icons/mouse.gif" alt="">
+            </div>
+            <div id="hide" onclick="hideVideoList()" class="text-center d-none">
+                <i id="hideBtnIcon" class="fa-solid fa-angles-right"></i>
+            </div>
+            <div id="menuBar">
+                <nav id="videoMenu" class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">All Content</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">Basic Knowledge</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">Sex Education</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">Herbal Medico</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">others</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="allVideosContainer">
+                <div class="allVideoItems">
+                    <h2 class="text-center">ALL Content</h2>
+                    <div class="row mx-auto mt-5">
+                        <div class="col-3 mb-4">
+                            <div class="videoItem">
+                                <span id="v_Duration">5:30</span>
+                                <img src="assets/images/1.jpg" alt="">
+                                <div class="videoItemText">
+                                    <h5>How to do gardening?</h5>
+                                    <h6>
+                                        <span>Noortaz Razoana</span>
+                                        <i class="vItemIcon fa-solid fa-heart"></i>
+                                        <i class="vItemIcon fa-regular fa-clock"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="videoItem">
+                                <span id="v_Duration">5:30</span>
+                                <img src="assets/images/2.jpg" alt="">
+                                <div class="videoItemText">
+                                    <h5>How to do gardening?</h5>
+                                    <h6>
+                                        <span>Noortaz Razoana</span>
+                                        <i class="vItemIcon fa-solid fa-heart"></i>
+                                        <i class="vItemIcon fa-regular fa-clock"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="videoItem">
+                                <span id="v_Duration">5:30</span>
+                                <img src="assets/images/3.jpg" alt="">
+                                <div class="videoItemText">
+                                    <h5>How to do gardening?</h5>
+                                    <h6>
+                                        <span>Noortaz Razoana</span>
+                                        <i class="vItemIcon fa-solid fa-heart"></i>
+                                        <i class="vItemIcon fa-regular fa-clock"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="videoItem">
+                                <span id="v_Duration">5:30</span>
+                                <img src="assets/images/4.jpg" alt="">
+                                <div class="videoItemText">
+                                    <h5>How to do gardening?</h5>
+                                    <h6>
+                                        <span>Noortaz Razoana</span>
+                                        <i class="vItemIcon fa-solid fa-heart"></i>
+                                        <i class="vItemIcon fa-regular fa-clock"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="videoItem">
+                                <span id="v_Duration">5:30</span>
+                                <img src="assets/images/5.jpg" alt="">
+                                <div class="videoItemText">
+                                    <h5>How to do gardening?</h5>
+                                    <h6>
+                                        <span>Noortaz Razoana</span>
+                                        <i class="vItemIcon fa-solid fa-heart"></i>
+                                        <i class="vItemIcon fa-regular fa-clock"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="videoItem">
+                                <span id="v_Duration">5:30</span>
+                                <img src="assets/images/6.jpg" alt="">
+                                <div class="videoItemText">
+                                    <h5>How to do gardening?</h5>
+                                    <h6>
+                                        <span>Noortaz Razoana</span>
+                                        <i class="vItemIcon fa-solid fa-heart"></i>
+                                        <i class="vItemIcon fa-regular fa-clock"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="videoItem">
+                                <span id="v_Duration">5:30</span>
+                                <img src="assets/images/7.jpg" alt="">
+                                <div class="videoItemText">
+                                    <h5>How to do gardening?</h5>
+                                    <h6>
+                                        <span>Noortaz Razoana</span>
+                                        <i class="vItemIcon fa-solid fa-heart"></i>
+                                        <i class="vItemIcon fa-regular fa-clock"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="videoItem">
+                                <span id="v_Duration">5:30</span>
+                                <img src="assets/images/8.jpg" alt="">
+                                <div class="videoItemText">
+                                    <h5>How to do gardening?</h5>
+                                    <h6>
+                                        <span>Noortaz Razoana</span>
+                                        <i class="vItemIcon fa-solid fa-heart"></i>
+                                        <i class="vItemIcon fa-regular fa-clock"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="videoItem">
+                                <span id="v_Duration">5:30</span>
+                                <img src="assets/images/9.jpg" alt="">
+                                <div class="videoItemText">
+                                    <h5>How to do gardening?</h5>
+                                    <h6>
+                                        <span>Noortaz Razoana</span>
+                                        <i class="vItemIcon fa-solid fa-heart"></i>
+                                        <i class="vItemIcon fa-regular fa-clock"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="videoItem">
+                                <span id="v_Duration">5:30</span>
+                                <img src="assets/images/10.jpg" alt="">
+                                <div class="videoItemText">
+                                    <h5>How to do gardening?</h5>
+                                    <h6>
+                                        <span>Noortaz Razoana</span>
+                                        <i class="vItemIcon fa-solid fa-heart"></i>
+                                        <i class="vItemIcon fa-regular fa-clock"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="videoItem">
+                                <span id="v_Duration">5:30</span>
+                                <img src="assets/images/11.jpg" alt="">
+                                <div class="videoItemText">
+                                    <h5>How to do gardening?</h5>
+                                    <h6>
+                                        <span>Noortaz Razoana</span>
+                                        <i class="vItemIcon fa-solid fa-heart"></i>
+                                        <i class="vItemIcon fa-regular fa-clock"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="videoItem">
+                                <span id="v_Duration">5:30</span>
+                                <img src="assets/images/12.jpg" alt="">
+                                <div class="videoItemText">
+                                    <h5>How to do gardening?</h5>
+                                    <h6>
+                                        <span>Noortaz Razoana</span>
+                                        <i class="vItemIcon fa-solid fa-heart"></i>
+                                        <i class="vItemIcon fa-regular fa-clock"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="videoItem">
+                                <span id="v_Duration">5:30</span>
+                                <img src="assets/images/13.jpg" alt="">
+                                <div class="videoItemText">
+                                    <h5>How to do gardening?</h5>
+                                    <h6>
+                                        <span>Noortaz Razoana</span>
+                                        <i class="vItemIcon fa-solid fa-heart"></i>
+                                        <i class="vItemIcon fa-regular fa-clock"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="videoItem">
+                                <span id="v_Duration">5:30</span>
+                                <img src="assets/images/14.jpg" alt="">
+                                <div class="videoItemText">
+                                    <h5>How to do gardening?</h5>
+                                    <h6>
+                                        <span>Noortaz Razoana</span>
+                                        <i class="vItemIcon fa-solid fa-heart"></i>
+                                        <i class="vItemIcon fa-regular fa-clock"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-4">
+                            <div class="videoItem">
+                                <span id="v_Duration">5:30</span>
+                                <img src="assets/images/15.jpg" alt="">
+                                <div class="videoItemText">
+                                    <h5>How to do gardening?</h5>
+                                    <h6>
+                                        <span>Noortaz Razoana</span>
+                                        <i class="vItemIcon fa-solid fa-heart"></i>
+                                        <i class="vItemIcon fa-regular fa-clock"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- //All Videos Part End -->
+    </div>
+
+
+    <!-- if javascript doesn't work -->
+    <noscript>You have to enable javascript to view this site</noscript>
+    <!-- Jquery Js -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- FontAwesome Js -->
+    <script src="assets/js/fontawesome.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Main Js -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
