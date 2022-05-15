@@ -907,12 +907,212 @@ a:hover {
 /* //All Videos CSS End */
 
 /* DashBoard CSS Start */
+#dashBoard.allbox {
+  padding: none;
+  position: relative;
+  /* overflow: hidden; */
+}
 
-/* upload CSS Start */
-.upload .card {
+#dashBoard .db-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background: var(--extra-color2);
+  border-right: 1px solid black;
+}
+
+#dashBoard .db-sidebar a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+#dashBoard .db-sidebar ul {
+  padding-top: 71px;
+}
+
+#dashBoard .db-sidebar a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 65px;
+  font-size: 18px;
+  color: #fff;
+  padding-left: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#dashBoard .db-sidebar ul li:last-child a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#dashBoard .db-sidebar a:hover {
+  padding-left: 40px;
+}
+
+#dashBoard .db-sidebar .iconBtn {
+  font-size: 25px;
+  color: var(--light-yellow);
+  position: absolute;
+  top: 15px;
+  cursor: pointer;
+}
+
+#dashBoard .db-sidebar #open {
+  padding-left: 33px;
+}
+
+#dashBoard .db-sidebar #cancel {
+  right: 15px;
+}
+
+#dashBoard .db-utilities {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 200px;
+  height: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dashboardUtilities .card {
+  background: var(--body-color);
+}
+
+.dashboardUtilities .card .card-header {
+  border-bottom: 1px solid #444;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.dashboardUtilities .card .card-body {
+  border: none;
+  border-top: 1px solid black;
+}
+
+.dashboard_item .item .card {
+  background: #212121;
+  box-shadow: none !important;
+  border: 1px solid #999;
+  position: relative;
+  width: 100%;
+}
+
+.dashboard_item .item .card h5 {
+  color: beige;
+  font-size: 22px;
+}
+
+.dashboard_item .item h6 {
+  color: var(--light-yellow);
+  font-size: 20px;
+}
+
+.dashboard_item .item p {
+  color: #999;
+  font-size: 20px;
+}
+
+.dashboard_item .item #itemBtn {
+  position: absolute;
+  right: 10px;
+  bottom: 14px;
+  box-shadow: inset 0px 1px 0px 0px #d6b96b;
+  background: linear-gradient(to bottom, #c5a652 5%, #99730b 100%);
+  background-color: #c5a652;
+  border: 1px solid #7d5d0c;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 2px 6px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #6e530a;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.dashboard_item .item #itemBtn:hover {
+  background: linear-gradient(to bottom, #99730b 5%, #c5a652 100%);
+  background-color: #99730b;
+}
+
+.dashboard_item .item #itemBtn:active {
+  position: absolute;
+  bottom: 13px;
+}
+
+.db-channel .channel-menu {
+  padding: 20px 0 0;
+  border-bottom: 1px solid black;
+}
+
+.db-channel .channel-menu ul li {
+  margin: 0 15px;
+}
+
+.db-channel .channel-menu a {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.db-channel .channel-menu a:hover {
+  color: var(--light-yellow);
+}
+
+.db-channel .channel-menu .form-control {
+  box-shadow: none;
+  outline: 0;
   background: var(--body-color);
   border: 1px solid #444;
-  box-shadow: 5px 5px 5px rgb(0 0 0 / 80%);
+  color: #fff;
+
+  box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.5) inset;
+}
+
+.db-channel .channel-menu ul li span {
+  cursor: pointer;
+  background: #5d271c;
+  border-top: 1px solid #444;
+  border-right: 1px solid #444;
+  border-bottom: 1px solid #444;
+}
+
+.db-channel .channel-menu ul li img {
+  width: 25px;
+  height: 25px;
+}
+
+/* upload CSS Start */
+.upload {
+  padding: 20px 0;
+  border-top: 1px solid #444;
+}
+
+.upload .card {
+  margin: 0 25px;
+  background: var(--body-color);
+  border: 1px solid #444;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -973,47 +1173,78 @@ a:hover {
   top: 1px;
 }
 
-.dashboardUtilities .card {
-  background: var(--body-color);
-  border: 1px solid #444;
-  box-shadow: 5px 5px 5px rgb(0 0 0 / 80%);
-}
-
-.dashboardUtilities .card .card-header {
-  background: #a1a18a;
-  border-bottom: 1px solid #444;
-  font-size: 20px;
-  color: var(--extra-color);
-}
-
-.dashboard_item .item .card {
-  /* background: #0d292e; */
-  background: #192d30;
-  box-shadow: none !important;
-  border: 1px solid #999;
-  position: relative;
+.db-channel .upload .videoText{
+  overflow: hidden;
   width: 100%;
 }
 
-.dashboard_item .item .card h5 {
-  color: beige;
-  font-size: 22px;
+.db-channel .upload .videoText .textForm{
+  overflow-y: auto;
+  min-height: 100%;
 }
 
-.dashboard_item .item h6 {
-  color: var(--light-yellow);
-  font-size: 20px;
+.db-channel .upload .videoText .textForm::-webkit-scrollbar {
+  width: 10px;
 }
 
-.dashboard_item .item p {
-  color: #999;
-  font-size: 20px;
+.db-channel .upload .videoText .textForm::-webkit-scrollbar-track {
+  background: #404653;
+  -webkit-box-shadow: inset -5px -5px 10px 5px rgba(77, 77, 77, 0.5);
+  box-shadow: inset -5px -5px 10px 5px rgba(77, 77, 77, 0.5);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
-.dashboard_item .item #itemBtn {
-  position: absolute;
-  right: 10px;
-  bottom: 14px;
+.db-channel .upload .videoText .textForm::-webkit-scrollbar-thumb {
+  background: #222;
+  border: 1px solid #666;
+  border-radius: 5px;
+}
+
+.db-channel .upload .videoText .textForm{
+  padding: 20px 50px 20px 30px;
+  background: transparent;
+}
+
+.db-channel .upload .videoText label {
+  color: #fff;
+}
+
+.db-channel .upload .videoText .form-control {
+  margin-bottom: 15px;
+
+  box-shadow: none;
+  outline: 0;
+  background: var(--body-color);
+  border: 1px solid #444;
+  color: #fff;
+
+  box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.5) inset;
+}
+
+.db-channel .upload .videoText .form-floating .form-control {
+  padding-top: 18px;
+  padding-bottom: 0;
+}
+
+.db-channel .upload .videoText .form-select {
+  box-shadow: none;
+  outline: 0;
+  background: var(--body-color);
+  border: 1px solid #444;
+  color: #fff;
+
+  box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.5) inset;
+}
+
+.db-channel .upload .videoText .btn{
   box-shadow: inset 0px 1px 0px 0px #d6b96b;
   background: linear-gradient(to bottom, #c5a652 5%, #99730b 100%);
   background-color: #c5a652;
@@ -1022,98 +1253,26 @@ a:hover {
   cursor: pointer;
   color: #ffffff;
   font-size: 16px;
-  padding: 2px 6px;
+  padding: 4px 15px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #6e530a;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 
-.dashboard_item .item #itemBtn:hover {
+.db-channel .upload .videoText .btn:hover {
   background: linear-gradient(to bottom, #99730b 5%, #c5a652 100%);
   background-color: #99730b;
 }
 
-.dashboard_item .item #itemBtn:active {
-  position: absolute;
-  bottom: 13px;
+.db-channel .upload .videoText .btn:active {
+  position: relative;
+  margin-top: 1px;
 }
 
 /* //upload CSS End */
-
-/* //DashBoard CSS End */
-
-
-/* DashBoard CSS Start */
-#dashBoard.allbox{
-  padding: none;
-  position: relative;
-}
-
-#dashBoard .db-sidebar{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100%;
-  background: var(--extra-color2);
-  border-radius: 5px 0 0 5px;
-  -webkit-border-radius: 5px 0 0 5px;
-  -moz-border-radius: 5px 0 0 5px;
-  -ms-border-radius: 5px 0 0 5px;
-  -o-border-radius: 5px 0 0 5px;
-}
-
-#dashBoard .db-sidebar a img{
-  width: 30px;
-  height: 30px;
-  margin-right: 20px;
-}
-
-#dashBoard .db-sidebar ul{
-  padding-top: 70px;
-}
-
-#dashBoard .db-sidebar a{
-  display: block;
-  width: 100%;
-  height: 100%;
-  line-height: 65px;
-  font-size: 18px;
-  color: #fff;
-  padding-left: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid black;
-  cursor: pointer;
-  transition: all .4s;
-}
-
-#dashBoard .db-sidebar ul li:last-child a{
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-#dashBoard .db-sidebar a:hover{
-  padding-left: 40px;
-}
-
-#dashBoard .db-sidebar .iconBtn{
-  font-size: 25px;
-  color: var(--light-yellow);
-  position: absolute;
-  top: 15px;
-  cursor: pointer;
-}
-
-#dashBoard .db-sidebar #open{
-  padding-left: 33px;
-  
-}
-
-#dashBoard .db-sidebar #cancel{
-  right: 15px;
-}
 
 /* //DashBoard CSS End */

@@ -62,19 +62,30 @@
             <div class="allbox">
                 <div class="row">
                     <div class="col-3">
-                        <div class="upload">
-                            <div class="card" style="width: 18rem;">
-                                <img src="assets/images/gif/uploadFile3.gif" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <h4 class="text-start">Upload your video and Show your skills</h4>
-                                    <p class="card-text text-start">You can upload your content from here</p>
-                                    <input type="file" id="uploadfile" accept="assets/videos/*">
-                                    <label for="uploadfile" class="uploadBtn mt-3">Upload</label>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
-                    <div class="col-9">
+                </div>
+            </div>
+        </section>
+
+        <section id="frontBox" class="">
+            <div id="dashBoard" class="allbox">
+                <div class="db-sidebar">
+                    <!-- <div class="sidebarBtn">
+                        <i id="open" class="fas fa-bars iconBtn"></i>
+                        <i id="cancel" class="fas fa-times iconBtn"></i>
+                    </div> -->
+                    <ul>
+                        <li><a><img src="assets/images/icons/dashboard.png">Dashboard</a></li>
+                        <li><a><img src="assets/images/icons/db-channel.png">Channel</a></li>
+                        <li><a><img src="assets/images/icons/db-profile.png">Profile</a></li>
+                        <li><a><img src="assets/images/icons/db-settings.png">Settings</a></li>
+                        <li><a><img src="assets/images/icons/db-help.png">Help</a></li>
+                        <li><a><img src="assets/images/icons/db-signout.png">SignOut</a></li>
+                    </ul>
+                </div>
+                <div class="db-utilities">
+                    <div class="db-dashboard d-none">
                         <div class="dashboardUtilities">
                             <div class="card">
                                 <div class="card-header">
@@ -125,25 +136,80 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="frontBox" class="">
-            <div id="dashBoard" class="allbox">
-                <div class="db-sidebar">
-                    <div class="sidebarBtn">
-                        <i id="open" class="fas fa-bars iconBtn"></i>
-                        <i id="cancel" class="fas fa-times iconBtn"></i>
+                    <div class="db-channel">
+                        <div class="channel-menu">
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                  <a class="nav-link active">Upload</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link">Videos</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link">Quiz</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link">Studio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <input type="text" class="form-control" placeholder="search">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">
+                                            <img src="assets/images/icons/db-search.png" alt="">
+                                        </span>
+                                    </div>
+                                </li>
+                              </ul>
+                        </div>
+                        <div class="upload">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="card" style="width: 100%;">
+                                        <img src="assets/images/gif/uploadFile3.gif" class="card-img-top" alt="...">
+                                        <div class="card-body text-center">
+                                            <h4 class="text-start">Upload your video and Show your skills</h4>
+                                            <p class="card-text text-start">You can upload your content from here</p>
+                                            <input type="file" id="uploadfile" accept="assets/videos/*">
+                                            <label for="uploadfile" class="uploadBtn mt-3">Upload</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="videoText">
+                                        <div class="textForm">
+                                            <form class="row">
+                                                <div class="col-12">
+                                                  <label for="inputEmail4" class="form-label">Title</label>
+                                                  <input type="email" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-12">
+                                                  <label for="inputAddress" class="form-label">Description</label>
+                                                  <div class="form-floating">
+                                                    <textarea class="form-control" id="floatingTextarea"></textarea>
+                                                  </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputEmail4" class="form-label">Playlist Name</label>
+                                                    <input type="email" class="form-control" id="inputEmail4">
+                                                  </div>
+                                                <div class="col-md-6">
+                                                  <label for="inputCity" class="form-label">Serial Number of Content</label>
+                                                  <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="inputState" class="form-label">Upload Time</label>
+                                                    <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="col-12 mt-3">
+                                                  <button type="submit" class="btn d-block ms-auto">Submit</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <ul>
-                        <li><a><img src="assets/images/icons/dashboard.png">Dashboard</a></li>
-                        <li><a><img src="assets/images/icons/db-channel.png">Channel</a></li>
-                        <li><a><img src="assets/images/icons/db-profile.png">Profile</a></li>
-                        <li><a><img src="assets/images/icons/db-settings.png">Settings</a></li>
-                        <li><a><img src="assets/images/icons/db-help.png">Help</a></li>
-                        <li><a><img src="assets/images/icons/db-signout.png">SignOut</a></li>
-                    </ul>
                 </div>
             </div>
         </section>
