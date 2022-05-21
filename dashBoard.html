@@ -149,6 +149,9 @@
                                   <a class="nav-link">Quiz</a>
                                 </li>
                                 <li class="nav-item">
+                                  <a class="nav-link">Content</a>
+                                </li>
+                                <li class="nav-item">
                                   <a class="nav-link">Studio</a>
                                 </li>
                                 <li class="nav-item">
@@ -161,22 +164,61 @@
                                 </li>
                               </ul>
                         </div>
-                        <div class="upload">
-                            <div class="row">
-                                <div class="col-3">
-                                    <div class="card" style="width: 100%;">
-                                        <img src="assets/images/gif/uploadFile3.gif" class="card-img-top" alt="...">
-                                        <div class="card-body text-center">
-                                            <h4 class="text-start">Upload your video and Show your skills</h4>
-                                            <p class="card-text text-start">You can upload your content from here</p>
-                                            <input type="file" id="uploadfile" accept="assets/videos/*">
-                                            <label for="uploadfile" class="uploadBtn mt-3">Upload</label>
+                        <div class="upload d-none">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="assets/images/gif/uploadFile3.gif" class="card-img-top" alt="...">
+                                            <div class="card-body text-center">
+                                                <h4 class="text-start">Upload your video and Show your skills</h4>
+                                                <p class="card-text text-start">You can upload your content from here</p>
+                                                <input type="file" id="uploadfile" accept="assets/videos/*">
+                                                <label for="uploadfile" class="uploadBtn mt-3">Upload</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="videoText scroll">
+                                            <div class="textForm">
+                                                <form class="row">
+                                                    <div class="col-12">
+                                                      <label for="inputEmail4" class="form-label">Title</label>
+                                                      <input type="email" class="form-control" id="inputEmail4">
+                                                    </div>
+                                                    <div class="col-12">
+                                                      <label for="inputAddress" class="form-label">Description</label>
+                                                      <div class="form-floating">
+                                                        <textarea class="form-control" id="floatingTextarea"></textarea>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="inputEmail4" class="form-label">Playlist Name</label>
+                                                        <input type="email" class="form-control" id="inputEmail4">
+                                                      </div>
+                                                    <div class="col-md-6">
+                                                      <label for="inputCity" class="form-label">Serial Number of Content</label>
+                                                      <input type="text" class="form-control" id="inputCity">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="inputState" class="form-label">Upload Time</label>
+                                                        <input type="text" class="form-control" id="inputCity">
+                                                    </div>
+                                                    <div class="col-12 mt-3">
+                                                      <button type="submit" class="btn d-block ms-auto">Submit</button>
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-9">
-                                    <div class="videoText">
-                                        <div class="textForm">
+                            </div>
+                        </div>
+                        <div class="quiz_up same d-none">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="textInput scroll">
                                             <form class="row">
                                                 <div class="col-12">
                                                   <label for="inputEmail4" class="form-label">Title</label>
@@ -189,7 +231,7 @@
                                                   </div>
                                                 </div>
                                                 <div class="col-12">
-                                                    <label for="inputEmail4" class="form-label">Playlist Name</label>
+                                                    <label for="inputEmail4" class="form-label">Content Topic</label>
                                                     <input type="email" class="form-control" id="inputEmail4">
                                                   </div>
                                                 <div class="col-md-6">
@@ -204,6 +246,186 @@
                                                   <button type="submit" class="btn d-block ms-auto">Submit</button>
                                                 </div>
                                             </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="textOutput scroll">
+                                            <div class="quizQuestion">
+                                                <div class="card">
+                                                    <h5 class="card-header">What is her full name? <span id="quizSubmit"
+                                                            class="badge" type="submit">Submit</span></h5>
+    
+                                                    <div class="card-body">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label text-light"
+                                                                for="flexCheckDefault">
+                                                                Noor
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label text-light"
+                                                                for="flexCheckDefault">
+                                                                Razoana
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label text-light"
+                                                                for="flexCheckDefault">
+                                                                Taz
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label text-light"
+                                                                for="flexCheckDefault">
+                                                                Noortaz Razoana
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="quizQuestion">
+                                                <div class="card">
+                                                    <h5 class="card-header">What is her full name? <span id="quizSubmit"
+                                                            class="badge" type="submit">Submit</span></h5>
+    
+                                                    <div class="card-body">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label text-light"
+                                                                for="flexCheckDefault">
+                                                                Noor
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label text-light"
+                                                                for="flexCheckDefault">
+                                                                Razoana
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label text-light"
+                                                                for="flexCheckDefault">
+                                                                Taz
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label text-light"
+                                                                for="flexCheckDefault">
+                                                                Noortaz Razoana
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="quizQuestion">
+                                                <div class="card">
+                                                    <h5 class="card-header">What is her full name? <span id="quizSubmit"
+                                                            class="badge" type="submit">Submit</span></h5>
+    
+                                                    <div class="card-body">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label text-light"
+                                                                for="flexCheckDefault">
+                                                                Noor
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label text-light"
+                                                                for="flexCheckDefault">
+                                                                Razoana
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label text-light"
+                                                                for="flexCheckDefault">
+                                                                Taz
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label text-light"
+                                                                for="flexCheckDefault">
+                                                                Noortaz Razoana
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="textContent same d-non">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="textInput scroll">
+                                            <form class="row">
+                                                <div class="col-12">
+                                                  <label for="inputEmail4" class="form-label">Title</label>
+                                                  <input type="email" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-12">
+                                                  <label for="inputAddress" class="form-label">Description</label>
+                                                  <div class="form-floating">
+                                                    <textarea class="form-control" id="floatingTextarea"></textarea>
+                                                  </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputEmail4" class="form-label">Content Topic</label>
+                                                    <input type="email" class="form-control" id="inputEmail4">
+                                                  </div>
+                                                <div class="col-md-6">
+                                                  <label for="inputCity" class="form-label">Serial Number of Content</label>
+                                                  <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="inputState" class="form-label">Upload Time</label>
+                                                    <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="col-12 mt-3">
+                                                  <button type="submit" class="btn d-block ms-auto">Submit</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="textOutput scroll">
+                                            <h3>Why we like vulgarity?</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum cum natus minima debitis delectus sit impedit quidem consequuntur tenetur ab fugit, quisquam in officia amet, voluptates recusandae sapiente officiis explicabo porro? Nihil velit harum pariatur, numquam aliquam eos quia nostrum!
+                                            </p>
+                                            <h3>Why we like vulgarity?</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum cum natus minima debitis delectus sit impedit quidem consequuntur tenetur ab fugit, quisquam in officia amet, voluptates recusandae sapiente officiis explicabo porro? Nihil velit harum pariatur, numquam aliquam eos quia nostrum!
+                                            </p>
+                                            <h3>Why we like vulgarity?</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum cum natus minima debitis delectus sit impedit quidem consequuntur tenetur ab fugit, quisquam in officia amet, voluptates recusandae sapiente officiis explicabo porro? Nihil velit harum pariatur, numquam aliquam eos quia nostrum!
+                                            </p>
                                         </div>
                                     </div>
                                 </div>

@@ -68,6 +68,36 @@ a:hover {
   bottom: 0;
   left: 0;
 }
+
+.scroll{
+  height: 450px;
+  overflow-y: auto;
+  padding: 30px 0;
+}
+
+.scroll::-webkit-scrollbar,
+.scroll textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scroll::-webkit-scrollbar-track,
+.scroll textarea::-webkit-scrollbar-track {
+  background: #404653;
+  -webkit-box-shadow: inset -5px -5px 10px 5px rgba(77, 77, 77, 0.5);
+  box-shadow: inset -5px -5px 10px 5px rgba(77, 77, 77, 0.5);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb,
+.scroll textarea::-webkit-scrollbar-thumb {
+  background: #222;
+  border: 1px solid #666;
+  border-radius: 5px;
+}
 /* Common CSS End */
 
 /* TopBar CSS Start */
@@ -533,13 +563,13 @@ a:hover {
   font-size: 16px;
 }
 
-.quizBox .card {
+.quizQuestion .card {
   background: var(--body-color);
   border: 1px solid #999;
   margin-bottom: 15px;
 }
 
-.quizBox .card .card-header {
+.quizQuestion .card .card-header {
   border-bottom: 1px solid #999;
   /* color: #fff; */
   color: var(--light-yellow);
@@ -583,14 +613,14 @@ a:hover {
   top: 7px;
 }
 
-.quizBox .card .card-body .form-check-input {
+.quizQuestion .card .card-body .form-check-input {
   outline: none !important;
   border: 1px solid #999;
   box-shadow: none !important;
   background-color: #353a44;
 }
 
-.quizBox .card .card-body .form-check-input:checked {
+.quizQuestion .card .card-body .form-check-input:checked {
   background-color: var(--dark-blue);
   border-color: var(--dark-blue);
 }
@@ -1173,47 +1203,33 @@ a:hover {
   top: 1px;
 }
 
-.db-channel .upload .videoText{
+.db-channel .upload {
   overflow: hidden;
   width: 100%;
 }
 
-.db-channel .upload .videoText .textForm{
+.db-channel .upload .videoText.scroll{
+  padding: 0;
+}
+
+.db-channel .upload .videoText .textForm {
   overflow-y: auto;
   min-height: 100%;
 }
 
-.db-channel .upload .videoText .textForm::-webkit-scrollbar {
-  width: 10px;
-}
-
-.db-channel .upload .videoText .textForm::-webkit-scrollbar-track {
-  background: #404653;
-  -webkit-box-shadow: inset -5px -5px 10px 5px rgba(77, 77, 77, 0.5);
-  box-shadow: inset -5px -5px 10px 5px rgba(77, 77, 77, 0.5);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
-.db-channel .upload .videoText .textForm::-webkit-scrollbar-thumb {
-  background: #222;
-  border: 1px solid #666;
-  border-radius: 5px;
-}
-
-.db-channel .upload .videoText .textForm{
-  padding: 20px 50px 20px 30px;
+.db-channel .upload .videoText .textForm,
+.same .textInput {
+  padding: 0px 25px 20px 30px;
   background: transparent;
 }
 
-.db-channel .upload .videoText label {
+.db-channel .upload .videoText label,
+.same .textInput label {
   color: #fff;
 }
 
-.db-channel .upload .videoText .form-control {
+.db-channel .upload .videoText .form-control,
+.same .textInput .form-control {
   margin-bottom: 15px;
 
   box-shadow: none;
@@ -1227,12 +1243,14 @@ a:hover {
   -moz-box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.5) inset;
 }
 
-.db-channel .upload .videoText .form-floating .form-control {
+.db-channel .upload .videoText .form-floating .form-control,
+.same .textInput .form-floating .form-control {
   padding-top: 18px;
   padding-bottom: 0;
 }
 
-.db-channel .upload .videoText .form-select {
+.db-channel .upload .videoText .form-select,
+.same .textInput .form-select {
   box-shadow: none;
   outline: 0;
   background: var(--body-color);
@@ -1244,7 +1262,8 @@ a:hover {
   -moz-box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.5) inset;
 }
 
-.db-channel .upload .videoText .btn{
+.db-channel .upload .videoText .btn,
+.same .textInput .btn {
   box-shadow: inset 0px 1px 0px 0px #d6b96b;
   background: linear-gradient(to bottom, #c5a652 5%, #99730b 100%);
   background-color: #c5a652;
@@ -1263,16 +1282,47 @@ a:hover {
   -o-border-radius: 3px;
 }
 
-.db-channel .upload .videoText .btn:hover {
+.db-channel .upload .videoText .btn:hover,
+.same .textInput .btn:hover {
   background: linear-gradient(to bottom, #99730b 5%, #c5a652 100%);
   background-color: #99730b;
 }
 
-.db-channel .upload .videoText .btn:active {
+.db-channel .upload .videoText .btn:active,
+.same .textInput .btn:active {
   position: relative;
   margin-top: 1px;
 }
 
 /* //upload CSS End */
+
+/* Quiz CSS Start */
+
+.same {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.same .textOutput{
+  padding: 20px;
+  box-shadow: 3px -3px 5px 1px rgb(0 0 0 / 50%) inset;
+  -webkit-box-shadow: 3px -3px 5px 1px rgb(0 0 0 / 50%) inset;
+  -moz-box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.5) inset;
+  
+}
+
+.same .textOutput h3{
+  font-size:  22px;
+  color: var(--light-yellow);
+}
+
+.same .textOutput p{
+  font-size:  18px;
+  color: #999;
+  text-align: justify;
+  margin: 7px 0 20px;
+}
+
+
+/* //Quiz CSS End */
 
 /* //DashBoard CSS End */
